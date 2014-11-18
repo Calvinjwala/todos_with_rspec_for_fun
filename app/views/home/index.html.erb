@@ -1,0 +1,6 @@
+<%= @todo.name if @todo %>
+
+<%= simple_form_for @new_todo do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit, "Create" %>
+<% end %>
